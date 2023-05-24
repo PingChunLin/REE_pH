@@ -1,0 +1,1183 @@
+DATABASE C:\Program Files (x86)\USGS\Phreeqc Interactive 3.7.3-15968\database\phreeqc.dat
+SELECTED_OUTPUT 1
+    -file                 selected_output_all.sel
+    -reset                false
+    -pH                   true
+    -temperature          true
+    -alkalinity           true
+    -ionic_strength       true
+
+USER_PUNCH 1
+    -headings YCO3+ LaCO3+ CeCO3+ PrCO3+ NdCO3+ SmCO3+ EuCO3+ GdCO3+ TbCO3+ DyCO3+ HoCO3+ ErCO3+ TmCO3+ YbCO3+ LuCO3+ Y(CO3)2- La(CO3)2- Ce(CO3)2- Pr(CO3)2- Nd(CO3)2- Sm(CO3)2- Eu(CO3)2- Gd(CO3)2- Tb(CO3)2- Dy(CO3)2- Ho(CO3)2- Er(CO3)2- Tm(CO3)2- Yb(CO3)2- Lu(CO3)2- Y+3 La+3 Ce+3 Pr+3 Nd+3 Sm+3 Eu+3 Gd+3 Tb+3 Dy+3 Ho+3 Er+3 Tm+3 Yb+3 Lu+3 YOH+2 LaOH+2 CeOH+2 PrOH+2 NdOH+2 SmOH+2 EuOH+2 GdOH+2 TbOH+2 DyOH+2 HoOH+2 ErOH+2 TmOH+2 YbOH+2 LuOH+2 YCl+2 LaCl+2 CeCl+2 PrCl+2 NdCl+2 SmCl+2 EuCl+2 GdCl+2 TbCl+2 DyCl+2 HoCl+2 ErCl+2 TmCl+2 YbCl+2 LuCl+2 YSO4+ LaSO4+ CeSO4+ PrSO4+ NdSO4+ SmSO4+ EuSO4+ GdSO4+ TbSO4+ DySO4+ HoSO4+ ErSO4+ TmSO4+ YbSO4+ LuSO4+ YHCO3+2 LaHCO3+2 CeHCO3+2 PrHCO3+2 NdHCO3+2 SmHCO3+2 EuHCO3+2 GdHCO3+2 TbHCO3+2 DyHCO3+2 HoHCO3+2 ErHCO3+2 TmHCO3+2 YbHCO3+2 LuHCO3+2
+    -start
+ 10 PUNCH MOL("YCO3+")/TOT("Y")
+ 20 PUNCH MOL("LaCO3+")/TOT("La")
+ 30 PUNCH MOL("CeCO3+")/TOT("Ce")
+ 40 PUNCH MOL("PrCO3+")/TOT("Pr")
+ 60 PUNCH MOL("NdCO3+")/TOT("Nd")
+ 70 PUNCH MOL("SmCO3+")/TOT("Sm")
+ 80 PUNCH MOL("EuCO3+")/TOT("Eu")
+ 90 PUNCH MOL("GdCO3+")/TOT("Gd")
+100 PUNCH MOL("TbCO3+")/TOT("Tb")
+110 PUNCH MOL("DyCO3+")/TOT("Dy")
+120 PUNCH MOL("HoCO3+")/TOT("Ho")
+130 PUNCH MOL("ErCO3+")/TOT("Er")
+140 PUNCH MOL("TmCO3+")/TOT("Tm")
+150 PUNCH MOL("YbCO3+")/TOT("Yb")
+160 PUNCH MOL("LuCO3+")/TOT("Lu")
+170 PUNCH MOL("Y(CO3)2-")/TOT("Y")
+180 PUNCH MOL("La(CO3)2-")/TOT("La")
+190 PUNCH MOL("Ce(CO3)2-")/TOT("Ce")
+200 PUNCH MOL("Pr(CO3)2-")/TOT("Pr")
+210 PUNCH MOL("Nd(CO3)2-")/TOT("Nd")
+220 PUNCH MOL("Sm(CO3)2-")/TOT("Sm")
+230 PUNCH MOL("Eu(CO3)2-")/TOT("Eu")
+240 PUNCH MOL("Gd(CO3)2-")/TOT("Gd")
+250 PUNCH MOL("Tb(CO3)2-")/TOT("Tb")
+260 PUNCH MOL("Dy(CO3)2-")/TOT("Dy")
+270 PUNCH MOL("Ho(CO3)2-")/TOT("Ho")
+280 PUNCH MOL("Er(CO3)2-")/TOT("Er")
+290 PUNCH MOL("Tm(CO3)2-")/TOT("Tm")
+300 PUNCH MOL("Yb(CO3)2-")/TOT("Yb")
+310 PUNCH MOL("Lu(CO3)2-")/TOT("Lu")
+320 PUNCH MOL("Y+3")/TOT("Y")
+330 PUNCH MOL("La+3")/TOT("La")
+340 PUNCH MOL("Ce+3")/TOT("Ce")
+350 PUNCH MOL("Pr+3")/TOT("Pr")
+360 PUNCH MOL("Nd+3")/TOT("Nd")
+370 PUNCH MOL("Sm+3")/TOT("Sm")
+380 PUNCH MOL("Eu+3")/TOT("Eu")
+390 PUNCH MOL("Gd+3")/TOT("Gd")
+400 PUNCH MOL("Tb+3")/TOT("Tb")
+410 PUNCH MOL("Dy+3")/TOT("Dy")
+420 PUNCH MOL("Ho+3")/TOT("Ho")
+430 PUNCH MOL("Er+3")/TOT("Er")
+440 PUNCH MOL("Tm+3")/TOT("Tm")
+450 PUNCH MOL("Yb+3")/TOT("Yb")
+460 PUNCH MOL("Lu+3")/TOT("Lu")
+470 PUNCH MOL("YOH+2")/TOT("Y")
+480 PUNCH MOL("LaOH+2")/TOT("La")
+490 PUNCH MOL("CeOH+2")/TOT("Ce")
+500 PUNCH MOL("PrOH+2")/TOT("Pr")
+510 PUNCH MOL("NdOH+2")/TOT("Nd")
+520 PUNCH MOL("SmOH+2")/TOT("Sm")
+530 PUNCH MOL("EuOH+2")/TOT("Eu")
+540 PUNCH MOL("GdOH+2")/TOT("Gd")
+550 PUNCH MOL("TbOH+2")/TOT("Tb")
+560 PUNCH MOL("DyOH+2")/TOT("Dy")
+570 PUNCH MOL("HoOH+2")/TOT("Ho")
+580 PUNCH MOL("ErOH+2")/TOT("Er")
+590 PUNCH MOL("TmOH+2")/TOT("Tm")
+600 PUNCH MOL("YbOH+2")/TOT("Yb")
+610 PUNCH MOL("LuOH+2")/TOT("Lu")
+620 PUNCH MOL("YCl+2")/TOT("Y")
+630 PUNCH MOL("LaCl+2")/TOT("La")
+640 PUNCH MOL("CeCl+2")/TOT("Ce")
+650 PUNCH MOL("PrCl+2")/TOT("Pr")
+660 PUNCH MOL("NdCl+2")/TOT("Nd")
+670 PUNCH MOL("SmCl+2")/TOT("Sm")
+680 PUNCH MOL("EuCl+2")/TOT("Eu")
+690 PUNCH MOL("GdCl+2")/TOT("Gd")
+700 PUNCH MOL("TbCl+2")/TOT("Tb")
+710 PUNCH MOL("DyCl+2")/TOT("Dy")
+720 PUNCH MOL("HoCl+2")/TOT("Ho")
+730 PUNCH MOL("ErCl+2")/TOT("Er")
+740 PUNCH MOL("TmCl+2")/TOT("Tm")
+750 PUNCH MOL("YbCl+2")/TOT("Yb")
+760 PUNCH MOL("LuCl+2")/TOT("Lu")
+770 PUNCH MOL("YSO4+")/TOT("Y")
+780 PUNCH MOL("LaSO4+")/TOT("La")
+790 PUNCH MOL("CeSO4+")/TOT("Ce")
+800 PUNCH MOL("PrSO4+")/TOT("Pr")
+810 PUNCH MOL("NdSO4+")/TOT("Nd")
+820 PUNCH MOL("SmSO4+")/TOT("Sm")
+830 PUNCH MOL("EuSO4+")/TOT("Eu")
+840 PUNCH MOL("GdSO4+")/TOT("Gd")
+850 PUNCH MOL("TbSO4+")/TOT("Tb")
+860 PUNCH MOL("DySO4+")/TOT("Dy")
+870 PUNCH MOL("HoSO4+")/TOT("Ho")
+880 PUNCH MOL("ErSO4+")/TOT("Er")
+890 PUNCH MOL("TmSO4+")/TOT("Tm")
+900 PUNCH MOL("YbSO4+")/TOT("Yb")
+910 PUNCH MOL("LuSO4+")/TOT("Lu")
+920 PUNCH MOL("YHCO3+2")/TOT("Y")
+930 PUNCH MOL("LaHCO3+2")/TOT("La")
+940 PUNCH MOL("CeHCO3+2")/TOT("Ce")
+950 PUNCH MOL("PrHCO3+2")/TOT("Pr")
+960 PUNCH MOL("NdHCO3+2")/TOT("Nd")
+970 PUNCH MOL("SmHCO3+2")/TOT("Sm")
+980 PUNCH MOL("EuHCO3+2")/TOT("Eu")
+990 PUNCH MOL("GdHCO3+2")/TOT("Gd")
+1000 PUNCH MOL("TbHCO3+2")/TOT("Tb")
+1010 PUNCH MOL("DyHCO3+2")/TOT("Dy")
+1020 PUNCH MOL("HoHCO3+2")/TOT("Ho")
+1030 PUNCH MOL("ErHCO3+2")/TOT("Er")
+1040 PUNCH MOL("TmHCO3+2")/TOT("Tm")
+1050 PUNCH MOL("YbHCO3+2")/TOT("Yb")
+1060 PUNCH MOL("LuHCO3+2")/TOT("Lu")
+
+    -end
+
+KNOBS
+    -iterations            1000
+    -convergence_tolerance 1e-12
+    -tolerance             1e-15
+    -step_size             1.3
+    -pe_step_size          1.1
+
+
+SOLUTION 10
+    temp      25
+    pH        10.53
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 11
+    temp      25
+    pH        10.33
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 12
+    temp      25
+    pH        10.13
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 13
+    temp      25
+    pH        9.93
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 14
+    temp      25
+    pH        9.73
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 15
+    temp      25
+    pH        9.53
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 16
+    temp      25
+    pH        9.33
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 17
+    temp      25
+    pH        9.13
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 18
+    temp      25
+    pH        8.93
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 19
+    temp      25
+    pH        8.73
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 20
+    temp      25
+    pH        8.53
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 21
+    temp      25
+    pH        8.33
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 22
+    temp      25
+    pH        8.13
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 23
+    temp      25
+    pH        7.93
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 24
+    temp      25
+    pH        7.73
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 25
+    temp      25
+    pH        7.53
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 26
+    temp      25
+    pH        7.33
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 27
+    temp      25
+    pH        7.13
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 28
+    temp      25
+    pH        6.93
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 29
+    temp      25
+    pH        6.73
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 30
+    temp      25
+    pH        6.53
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 31
+    temp      25
+    pH        6.33
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 32
+    temp      25
+    pH        6.13
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 33
+    temp      25
+    pH        5.93
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 34
+    temp      25
+    pH        5.73
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 35
+    temp      25
+    pH        5.53
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 36
+    temp      25
+    pH        5.33
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 37
+    temp      25
+    pH        5.13
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 38
+    temp      25
+    pH        4.93
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 39
+    temp      25
+    pH        4.73
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 40
+    temp      25
+    pH        4.53
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 41
+    temp      25
+    pH        4.33
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
+
+SOLUTION 42
+    temp      25
+    pH        4.13
+    pe        4
+    redox     pe
+    units     mol/kgw
+    density   1
+    Alkalinity 0.002283908
+    Ca        0.010656805701296
+    Ce(3)     1e-12
+    Cl        0.565764700000001
+    Dy(3)     1e-12
+    Er(3)     1e-12
+    Eu(3)     1e-12
+    Gd(3)     1e-12
+    Ho(3)     1e-12
+    K         0.0105797431027568
+    La(3)     1e-12
+    Lu(3)     1e-12
+    Mg        0.0547420667978164
+    Na        0.486059689949494
+    Nd(3)     1e-12
+    Pr(3)     1e-12
+    S(6)      0.0292642896789823
+    Sm(3)     1e-12
+    Tb(3)     1e-12
+    Tm(3)     1e-12
+    Y(3)      1e-12
+    Yb(3)     1e-12
+    B         0.000430227489133488
+    -water    1 # kg
