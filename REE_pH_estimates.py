@@ -1,11 +1,12 @@
 """
-This code estimate pH using liner regression
+This script estimates pH of marine carbonates using linear regression
+with an input spreadsheet of REE concentrations.
 """
+from math import sqrt
 import pandas as pd
 import matplotlib.pyplot as plt
 import scipy.stats as sp
 import numpy as np
-from math import sqrt
 from sklearn.metrics import r2_score
 pd.set_option('display.max_rows', None)
 

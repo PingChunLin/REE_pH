@@ -6,7 +6,7 @@ All scripts are written in python, except the REE_speciation.pqi. REE_speciation
 To estimate seawater pH based on REE conctration in rocks, please import the REE concentrations in .csv format. Please refer to the test files in the Test folder for the spreadsheet format. To read in csv
 
 ## Speciation.py
-Speciation.py visualizes the change of REE concentrations as the pH changes in seawater. This script recreates Supplementary Figure 2, the Heavy/ Light REE ratio chance from pH 5.7 to 8.7. The input file is ree_speciation_new.csv is from the PHREEQC model using REE_speciation.pqi. 
+Speciation.py visualizes the change of REE concentrations as the pH changes in seawater. This script recreates Supplementary Figure 2, the Heavy/ Light REE ratio chance from pH 5.7 to 8.7. The input file is ree_speciation.csv is from the PHREEQC model using REE_speciation.pqi. 
 
 ## REE_speciation.pqi (PHREEQC folder)
 REE_speciation.pqi is the input file for PHREEQC. After installing PHREEQC, you can directly use this file. The first line of the input file refers to the location of the database on the user end. You can change it to the loca file where you've installed the PHREEQC software. After finishing the run, PHREEQC will produce multiple output files, and the selected_output_all.sel. The REE speciation data from ree_speciation_new.csv (the input csv for Speciation.py) is a subset from selected_output_all.sel.

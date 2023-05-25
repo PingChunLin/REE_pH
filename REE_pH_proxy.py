@@ -3,8 +3,8 @@ This code produces the REE-pH proxy with linear regression from REE slopes
 using modern seawater from GLODAPv2 (2021) for pH data and GEOTRACES (2021)
 for REE measurements in seawater.
 """
-import pandas as pd
 import math
+import pandas as pd
 import matplotlib.pyplot as plt
 import scipy.stats as sp
 import numpy as np

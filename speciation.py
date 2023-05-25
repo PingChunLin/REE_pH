@@ -1,8 +1,14 @@
+"""
+This code reads a spreadsheet of speciation over a fixed pH range
+from PHREEQC and produces a figure that visualizes the HREE/LREE ratio
+combinations in all REEs.
+"""
+
 import pandas as pd
 import matplotlib.pyplot as plt
 pd.set_option('display.max_rows', None)
 
-df = pd.read_csv('PHREEQC/ree_speciation_new.csv')
+df = pd.read_csv('PHREEQC/ree_speciation.csv')
 
 REEs = ['La', 'Ce', 'Pr', 'Nd', 'Sm', 'Eu', 'Gd',
         'Tb', 'Dy', 'Ho', 'Er', 'Tm', 'Yb', 'Lu']
