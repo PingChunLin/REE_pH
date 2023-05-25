@@ -10,34 +10,27 @@ from sklearn.metrics import r2_score
 pd.set_option('display.max_rows', None)
 
 # REE concentration starts as ug REE /g ALL(ppm) format [g/g]
+REE_mf = pd.read_csv('REE_data/REE_limestone_toyama_noFJ1YK1_ugg.csv')
 
-# REE_mf = pd.read_csv('REE_limestone_srivastava_figure_ugg.csv')
-# REE_mf = pd.read_csv('REE_limestone_patra_figure_ugg.csv')
-# REE_mf = pd.read_csv('REE_limestone_webb_ugg.csv')
-# REE_mf = pd.read_csv('REE_limestone_zhao_cayman_limestone_ugg.csv')
-# REE_mf = pd.read_csv('REE_limestone_zhao_pedro_limestone_ugg.csv')
-# REE_mf = pd.read_csv('REE_limestone_toyama_noFJ1YK1_ugg.csv')
-# REE_mf = pd.read_csv('REE_limestone_rodler_klb_s4_limestone_ugg.csv')
-REE_mf = pd.read_csv('REE_limestone_rodler_fsf_s2_limestone_ugg.csv')
 
 REE_mf = REE_mf[['La', 'Ce', 'Pr', 'Nd', 'Sm', 'Eu', 'Gd',
                  'Tb', 'Dy', 'Ho', 'Er', 'Tm', 'Yb', 'Lu']]
 REE_mf = REE_mf*10**-6  # REE_mf to g/g
 
 # DREE (partitioning constants) [mol/mol, no unit]
-D_REE = pd.read_csv('DREE_toyama.csv')  # (mol/mol)
+D_REE = pd.read_csv('coeff/DREE_toyama.csv')  # (mol/mol)
 D_REE = D_REE[['La', 'Ce', 'Pr', 'Nd', 'Sm', 'Eu', 'Gd',
                'Tb', 'Dy', 'Ho', 'Er', 'Tm', 'Yb', 'Lu']]
 
 # REE atomic number [amu]
-atomic_num = pd.read_csv('atomic_number.csv')
+atomic_num = pd.read_csv('coeff/atomic_number.csv')
 
 # REE molar mass [g/mol]
-molar_mass = pd.read_csv('molar_mass_mgmol.csv')
+molar_mass = pd.read_csv('coeff/molar_mass_mgmol.csv')
 molar_mass = molar_mass*10**-3  # mg to g
 
 # PAAS (ug REE /g ALL(ppm)) [mol/g] from Pourmand et al., 2012
-paas = pd.read_csv('paas.csv')  # ug/g
+paas = pd.read_csv('coeff/paas.csv')  # ug/g
 paas = paas*10**-6  # paas to g/g
 paas_mol = paas/molar_mass.loc[0]  # paas to mol
 paas_mol = paas_mol[['La', 'Ce', 'Pr', 'Nd', 'Sm', 'Eu',
@@ -85,8 +78,6 @@ for n in range(0, len(mREE_selected)):
     all_pH_err.append(y_err_bar)
     all_RS_err.append(x_err_bar)
     print(round(pH, 2), slope, x_err_bar, y_err_bar)
-
-
 
 # average REE pH estimate
 avg_slope, avg_int, avg_r, avg_p, avg_se = sp.linregress([62, 64, 66, 68],

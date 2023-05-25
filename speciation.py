@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 pd.set_option('display.max_rows', None)
 
-df = pd.read_csv('ree_speciation_new.csv')  # 4/27/23 update
+df = pd.read_csv('PHREEQC/ree_speciation_new.csv')
 
 REEs = ['La', 'Ce', 'Pr', 'Nd', 'Sm', 'Eu', 'Gd',
         'Tb', 'Dy', 'Ho', 'Er', 'Tm', 'Yb', 'Lu']

@@ -12,7 +12,7 @@ import geopandas as gpd
 pd.set_option('display.max_rows', None)
 
 # import data
-df = pd.read_csv('GLODAPv2.2022_Merged_Master_File.csv')
+df = pd.read_csv('pH_data/GLODAPv2.2022_Merged_Master_File.csv')
 # parameters
 max_depth = 800
 min_depth = 200
@@ -67,7 +67,7 @@ plt.show()
 
 # REE slope vs depth & REE conc vs depth
 # REE conc. in seawater [mol/g]
-m_REE = pd.read_csv('REE_seawater_all_pmol.csv')
+m_REE = pd.read_csv('REE_data/REE_seawater_all_pmol.csv')
 
 # Filters
 shallow_depth = (m_REE['depth'] >= min_depth) & (m_REE['depth'] <= max_depth)
@@ -86,14 +86,14 @@ m_REE = m_REE[REE_list]
 m_REE = m_REE*10**-15  # mREE to mol/g
 
 # REE atomic number [amu]
-atomic_num = pd.read_csv('atomic_number.csv')
+atomic_num = pd.read_csv('coeff/atomic_number.csv')
 
 # REE molar mass [g/mol]
-molar_mass = pd.read_csv('molar_mass_mgmol.csv')
+molar_mass = pd.read_csv('coeff/molar_mass_mgmol.csv')
 molar_mass = molar_mass*10**-3  # mg to g
 
 # PAAS (ug REE /g ALL(ppm)) [mol/g]
-paas = pd.read_csv('paas.csv')  # ug/g
+paas = pd.read_csv('coeff/paas.csv')  # ug/g
 paas = paas*10**-6  # paas to g/g
 paas_mol = paas/molar_mass.loc[0]  # paas to mol
 paas_mol = paas_mol[REE_list]
