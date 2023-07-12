@@ -1,4 +1,4 @@
-# REE_pH
+# REE-pH 
 
 **This is the repository for the REE-pH proxy in the paper by Lin and Catling (in review). This work has not been published in a peer-reviewed journal yet. Please email me before you use the code to make sure that the pH values are generated correctly (pcl1225@uw.edu)**
 
