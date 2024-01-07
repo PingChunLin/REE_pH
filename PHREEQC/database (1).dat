@@ -1,0 +1,444 @@
+PITZER
+-MacInnes   false
+-use_etheta true
+-redox      false
+-APHI								
+			0	0	0	0	0	0
+
+SOLUTION_MASTER_SPECIES
+    H             H+              -1     H               1.008
+    H(1)          H+              -1     0              
+    E             e-               0     0               1.008
+    O             H2O              0     O               15.999
+    O(-2)         H2O              0     0              
+    Ca            Ca+2             0     Ca              40.08
+    Mg            Mg+2             0     Mg              24.31
+    Na            Na+              0     Na              22.99
+    K             K+               0     K               39.1
+    Cl            Cl-              0     Cl              35.45
+    C             CO3-2            2     HCO3            12.015
+    C(4)          CO3-2            2     HCO3           
+    Alkalinity    CO3-2            1     Ca0.5(CO3)0.5   50.046
+    S             SO4-2            0     SO4             32.064
+    S(6)          SO4-2            0     SO4            
+    B             B(OH)4-          0     B               10.81
+    La            La+3             0     La              138.9055
+    La(3)         La+3             0     La             
+    Ce            Ce+3             0     Ce              140.115
+    Ce(3)         Ce+3             0     Ce             
+    Pr            Pr+3             0     Pr              140.9076
+    Pr(3)         Pr+3             0     Pr             
+    Nd            Nd+3             0     Nd              144.24
+    Nd(3)         Nd+3             0     Nd             
+    Sm            Sm+3             0     Sm              150.36
+    Sm(3)         Sm+3             0     Sm             
+    Eu            Eu+3             0     Eu              151.965
+    Eu(3)         Eu+3             0     Eu             
+    Gd            Gd+3             0     Gd              157.25
+    Gd(3)         Gd+3             0     Gd             
+    Tb            Tb+3             0     Tb              158.9253
+    Tb(3)         Tb+3             0     Tb             
+    Dy            Dy+3             0     Dy              162.5
+    Dy(3)         Dy+3             0     Dy             
+    Ho            Ho+3             0     Ho              164.9303
+    Ho(3)         Ho+3             0     Ho             
+    Tm            Tm+3             0     Tm              168.9342
+    Tm(3)         Tm+3             0     Tm             
+    Er            Er+3             0     Er              167.26
+    Er(3)         Er+3             0     Er             
+    Lu            Lu+3             0     Lu              174.967
+    Lu(3)         Lu+3             0     Lu             
+    Yb            Yb+3             0     Yb              173.04
+    Yb(3)         Yb+3             0     Yb             
+    Y             Y+3              0     Y               88.91
+    Y(3)          Y+3              0     Y              
+
+SOLUTION_SPECIES
+H+ = H+
+    log_k     0
+e- = e-
+    log_k     0
+H2O = H2O
+    log_k     0
+Ca+2 = Ca+2
+    log_k     0
+Mg+2 = Mg+2
+    log_k     0
+Na+ = Na+
+    log_k     0
+K+ = K+
+    log_k     0
+Cl- = Cl-
+    log_k     0
+CO3-2 = CO3-2
+    log_k     0
+SO4-2 = SO4-2
+    log_k     0
+B(OH)4- = B(OH)4-
+    log_k     0
+H2O = OH- + H+
+    log_k     -13.74
+CO3-2 + H+ = HCO3-
+    log_k     9.92
+H+ + HCO3- = CO2 + H2O
+    log_k     6.13
+H+ + SO4-2 = HSO4-
+    log_k     1.489958479
+B(OH)4- + H+ = HB(OH)4
+    log_k     9
+Na+ + SO4-2 = NaSO4-
+    log_k     0.301029996
+HCO3- + Na+ = NaHCO3
+    log_k     -0.522878745
+CO3-2 + Na+ = NaCO3-
+    log_k     0.414973348
+B(OH)4- + Na+ = NaB(OH)4
+    log_k     -0.244125144
+K+ + SO4-2 = KSO4-
+    log_k     0.255272505
+Mg+2 + SO4-2 = MgSO4
+    log_k     1.008600172
+CO3-2 + Mg+2 = MgCO3
+    log_k     1.939519253
+HCO3- + Mg+2 = MgHCO3+
+    log_k     0.278753601
+Mg+2 + OH- = MgOH+
+    log_k     1.698970004
+B(OH)4- + Mg+2 = MgB(OH)4+
+    log_k     0.904715545
+Ca+2 + SO4-2 = CaSO4
+    log_k     1.033423755
+CO3-2 + Ca+2 = CaCO3
+    log_k     2.100370545
+Ca+2 + HCO3- = CaHCO3+
+    log_k     0.322219295
+B(OH)4- + Ca+2 = CaB(OH)4+
+    log_k     1.113943352
+La+3 = La+3
+    log_k     0
+Ce+3 = Ce+3
+    log_k     0
+Pr+3 = Pr+3
+    log_k     0
+Nd+3 = Nd+3
+    log_k     0
+Sm+3 = Sm+3
+    log_k     0
+Eu+3 = Eu+3
+    log_k     0
+Gd+3 = Gd+3
+    log_k     0
+Tb+3 = Tb+3
+    log_k     0
+Dy+3 = Dy+3
+    log_k     0
+Ho+3 = Ho+3
+    log_k     0
+Er+3 = Er+3
+    log_k     0
+Tm+3 = Tm+3
+    log_k     0
+Yb+3 = Yb+3
+    log_k     0
+Lu+3 = Lu+3
+    log_k     0
+Y+3 = Y+3
+    log_k     0
+CO3-2 + Y+3 = YCO3+
+    log_k     6.18
+CO3-2 + La+3 = LaCO3+
+    log_k     5.43
+CO3-2 + Ce+3 = CeCO3+
+    log_k     5.76
+CO3-2 + Pr+3 = PrCO3+
+    log_k     5.93
+CO3-2 + Nd+3 = NdCO3+
+    log_k     5.98
+CO3-2 + Sm+3 = SmCO3+
+    log_k     6.16
+CO3-2 + Eu+3 = EuCO3+
+    log_k     6.18
+CO3-2 + Gd+3 = GdCO3+
+    log_k     6.09
+CO3-2 + Tb+3 = TbCO3+
+    log_k     6.16
+CO3-2 + Dy+3 = DyCO3+
+    log_k     6.26
+CO3-2 + Ho+3 = HoCO3+
+    log_k     6.25
+CO3-2 + Er+3 = ErCO3+
+    log_k     6.31
+CO3-2 + Tm+3 = TmCO3+
+    log_k     6.38
+CO3-2 + Yb+3 = YbCO3+
+    log_k     6.51
+CO3-2 + Lu+3 = LuCO3+
+    log_k     6.45
+2CO3-2 + Y+3 = Y(CO3)2-
+    log_k     10.99
+2CO3-2 + La+3 = La(CO3)2-
+    log_k     9.66
+2CO3-2 + Ce+3 = Ce(CO3)2-
+    log_k     10.12
+2CO3-2 + Pr+3 = Pr(CO3)2-
+    log_k     10.44
+2CO3-2 + Nd+3 = Nd(CO3)2-
+    log_k     10.53
+2CO3-2 + Sm+3 = Sm(CO3)2-
+    log_k     10.89
+2CO3-2 + Eu+3 = Eu(CO3)2-
+    log_k     10.99
+2CO3-2 + Gd+3 = Gd(CO3)2-
+    log_k     10.84
+2CO3-2 + Tb+3 = Tb(CO3)2-
+    log_k     11.14
+2CO3-2 + Dy+3 = Dy(CO3)2-
+    log_k     11.27
+2CO3-2 + Ho+3 = Ho(CO3)2-
+    log_k     11.36
+2CO3-2 + Er+3 = Er(CO3)2-
+    log_k     11.48
+2CO3-2 + Tm+3 = Tm(CO3)2-
+    log_k     11.63
+2CO3-2 + Yb+3 = Yb(CO3)2-
+    log_k     11.66
+2CO3-2 + Lu+3 = Lu(CO3)2-
+    log_k     11.73
+HCO3- + Y+3 = YHCO3+2
+    log_k     1.37
+HCO3- + La+3 = LaHCO3+2
+    log_k     1.39
+Ce+3 + HCO3- = CeHCO3+2
+    log_k     1.36
+HCO3- + Pr+3 = PrHCO3+2
+    log_k     1.3
+HCO3- + Nd+3 = NdHCO3+2
+    log_k     1.33
+HCO3- + Sm+3 = SmHCO3+2
+    log_k     1.39
+Eu+3 + HCO3- = EuHCO3+2
+    log_k     1.52
+Gd+3 + HCO3- = GdHCO3+2
+    log_k     1.41
+HCO3- + Tb+3 = TbHCO3+2
+    log_k     1.51
+Dy+3 + HCO3- = DyHCO3+2
+    log_k     1.55
+HCO3- + Ho+3 = HoHCO3+2
+    log_k     1.51
+Er+3 + HCO3- = ErHCO3+2
+    log_k     1.54
+HCO3- + Tm+3 = TmHCO3+2
+    log_k     1.57
+HCO3- + Yb+3 = YbHCO3+2
+    log_k     1.58
+HCO3- + Lu+3 = LuHCO3+2
+    log_k     1.54
+Cl- + Y+3 = YCl+2
+    log_k     -0.4
+Cl- + La+3 = LaCl+2
+    log_k     -0.4
+Ce+3 + Cl- = CeCl+2
+    log_k     -0.4
+Cl- + Pr+3 = PrCl+2
+    log_k     -0.4
+Cl- + Nd+3 = NdCl+2
+    log_k     -0.4
+Cl- + Sm+3 = SmCl+2
+    log_k     -0.4
+Cl- + Eu+3 = EuCl+2
+    log_k     -0.4
+Cl- + Gd+3 = GdCl+2
+    log_k     -0.4
+Cl- + Tb+3 = TbCl+2
+    log_k     -0.4
+Cl- + Dy+3 = DyCl+2
+    log_k     -0.4
+Cl- + Ho+3 = HoCl+2
+    log_k     -0.4
+Cl- + Er+3 = ErCl+2
+    log_k     -0.4
+Cl- + Tm+3 = TmCl+2
+    log_k     -0.4
+Cl- + Yb+3 = YbCl+2
+    log_k     -0.4
+Cl- + Lu+3 = LuCl+2
+    log_k     -0.4
+SO4-2 + Y+3 = YSO4+
+    log_k     1.82
+La+3 + SO4-2 = LaSO4+
+    log_k     1.93
+Ce+3 + SO4-2 = CeSO4+
+    log_k     1.93
+Pr+3 + SO4-2 = PrSO4+
+    log_k     1.94
+Nd+3 + SO4-2 = NdSO4+
+    log_k     1.92
+SO4-2 + Sm+3 = SmSO4+
+    log_k     1.95
+Eu+3 + SO4-2 = EuSO4+
+    log_k     1.96
+Gd+3 + SO4-2 = GdSO4+
+    log_k     1.93
+SO4-2 + Tb+3 = TbSO4+
+    log_k     1.91
+Dy+3 + SO4-2 = DySO4+
+    log_k     1.89
+Ho+3 + SO4-2 = HoSO4+
+    log_k     1.86
+Er+3 + SO4-2 = ErSO4+
+    log_k     1.83
+SO4-2 + Tm+3 = TmSO4+
+    log_k     1.8
+SO4-2 + Yb+3 = YbSO4+
+    log_k     1.78
+Lu+3 + SO4-2 = LuSO4+
+    log_k     1.76
+OH- + Y+3 = YOH+2
+    log_k     -8.11
+La+3 + OH- = LaOH+2
+    log_k     -9.12
+Ce+3 + OH- = CeOH+2
+    log_k     -8.65
+OH- + Pr+3 = PrOH+2
+    log_k     -8.63
+Nd+3 + OH- = NdOH+2
+    log_k     -8.49
+OH- + Sm+3 = SmOH+2
+    log_k     -8.15
+Eu+3 + OH- = EuOH+2
+    log_k     -8.07
+Gd+3 + OH- = GdOH+2
+    log_k     -8.14
+OH- + Tb+3 = TbOH+2
+    log_k     -7.95
+Dy+3 + OH- = DyOH+2
+    log_k     -7.9
+Ho+3 + OH- = HoOH+2
+    log_k     -7.87
+Er+3 + OH- = ErOH+2
+    log_k     -7.83
+OH- + Tm+3 = TmOH+2
+    log_k     -7.7
+OH- + Yb+3 = YbOH+2
+    log_k     -7.55
+Lu+3 + OH- = LuOH+2
+    log_k     -7.58
+
+PHASES
+PHASES
+Fix_pH
+    H+ = H+
+    log_k     0
+Calcite
+	CaCO3 = CO3-2 + Ca+2
+	-log_k	-6.357
+	-delta_h -2.297 kcal
+Aragonite
+	CaCO3 = CO3-2 + Ca+2
+	-log_k	-6.177
+	-delta_h -2.589 kcal
+CO2(g)
+	CO2 = CO2
+	-log_k	-1.468
+	-delta_h -4.776 kcal
+	-analytic   10.5624  -2.3547e-2  -3972.8  0  5.8746e5  1.9194e-5
+
+SURFACE_MASTER_SPECIES
+    Hfo_s         Hfo_s(OH)3  
+
+SURFACE_SPECIES
+Hfo_s(OH)3 = Hfo_s(OH)3
+    log_k     0
+H+ + Hfo_s(OH)3 = Hfo_s(OH)2+ + H2O
+    log_k     4.76
+Hfo_s(OH)3 + Y+3 = Hfo_sO(OH)2Y+2 + H+
+    log_k     -2.98
+Hfo_s(OH)3 + Y+3 = Hfo_sO2(OH)Y+ + 2H+
+    log_k     -8.82
+Hfo_s(OH)3 + YCO3+ = Hfo_sO(OH)2YCO3 + H+
+    log_k     -1.3
+Hfo_s(OH)3 + La+3 = Hfo_sO(OH)2La+2 + H+
+    log_k     -2.86
+Hfo_s(OH)3 + La+3 = Hfo_sO2(OH)La+ + 2H+
+    log_k     -9.34
+Hfo_s(OH)3 + LaCO3+ = Hfo_sO(OH)2LaCO3 + H+
+    log_k     -0.39
+Ce+3 + Hfo_s(OH)3 = Hfo_sO(OH)2Ce+2 + H+
+    log_k     -2.38
+Ce+3 + Hfo_s(OH)3 = Hfo_sO2(OH)Ce+ + 2H+
+    log_k     -8.84
+CeCO3+ + Hfo_s(OH)3 = Hfo_sO(OH)2CeCO3 + H+
+    log_k     -0.21
+Hfo_s(OH)3 + Pr+3 = Hfo_sO(OH)2Pr+2 + H+
+    log_k     -2.25
+Hfo_s(OH)3 + Pr+3 = Hfo_sO2(OH)Pr+ + 2H+
+    log_k     -8.6
+Hfo_s(OH)3 + PrCO3+ = Hfo_sO(OH)2PrCO3 + H+
+    log_k     -0.22
+Hfo_s(OH)3 + Nd+3 = Hfo_sO(OH)2Nd+2 + H+
+    log_k     -2.17
+Hfo_s(OH)3 + Nd+3 = Hfo_sO2(OH)Nd+ + 2H+
+    log_k     -8.53
+Hfo_s(OH)3 + NdCO3+ = Hfo_sO(OH)2NdCO3 + H+
+    log_k     -0.2
+Hfo_s(OH)3 + Sm+3 = Hfo_sO(OH)2Sm+2 + H+
+    log_k     -2.05
+Hfo_s(OH)3 + Sm+3 = Hfo_sO2(OH)Sm+ + 2H+
+    log_k     -8.29
+Hfo_s(OH)3 + SmCO3+ = Hfo_sO(OH)2SmCO3 + H+
+    log_k     -0.2
+Eu+3 + Hfo_s(OH)3 = Hfo_sO(OH)2Eu+2 + H+
+    log_k     -2.11
+Eu+3 + Hfo_s(OH)3 = Hfo_sO2(OH)Eu+ + 2H+
+    log_k     -8.31
+EuCO3+ + Hfo_s(OH)3 = Hfo_sO(OH)2EuCO3 + H+
+    log_k     -0.26
+Gd+3 + Hfo_s(OH)3 = Hfo_sO(OH)2Gd+2 + H+
+    log_k     -2.28
+Gd+3 + Hfo_s(OH)3 = Hfo_sO2(OH)Gd+ + 2H+
+    log_k     -8.54
+GdCO3+ + Hfo_s(OH)3 = Hfo_sO(OH)2GdCO3 + H+
+    log_k     -0.38
+Hfo_s(OH)3 + Tb+3 = Hfo_sO(OH)2Tb+2 + H+
+    log_k     -2.29
+Hfo_s(OH)3 + Tb+3 = Hfo_sO2(OH)Tb+ + 2H+
+    log_k     -8.38
+Hfo_s(OH)3 + TbCO3+ = Hfo_sO(OH)2TbCO3 + H+
+    log_k     -0.4
+Dy+3 + Hfo_s(OH)3 = Hfo_sO(OH)2Dy+2 + H+
+    log_k     -2.32
+Dy+3 + Hfo_s(OH)3 = Hfo_sO2(OH)Dy+ + 2H+
+    log_k     -8.36
+DyCO3+ + Hfo_s(OH)3 = Hfo_sO(OH)2DyCO3 + H+
+    log_k     -0.51
+Hfo_s(OH)3 + Ho+3 = Hfo_sO(OH)2Ho+2 + H+
+    log_k     -2.36
+Hfo_s(OH)3 + Ho+3 = Hfo_sO2(OH)Ho+ + 2H+
+    log_k     -8.44
+Hfo_s(OH)3 + HoCO3+ = Hfo_sO(OH)2HoCO3 + H+
+    log_k     -0.57
+Er+3 + Hfo_s(OH)3 = Hfo_sO(OH)2Er+2 + H+
+    log_k     -2.33
+Er+3 + Hfo_s(OH)3 = Hfo_sO2(OH)Er+ + 2H+
+    log_k     -8.4
+ErCO3+ + Hfo_s(OH)3 = Hfo_sO(OH)2ErCO3 + H+
+    log_k     -0.59
+Hfo_s(OH)3 + Tm+3 = Hfo_sO(OH)2Tm+2 + H+
+    log_k     -2.24
+Hfo_s(OH)3 + Tm+3 = Hfo_sO2(OH)Tm+ + 2H+
+    log_k     -8.29
+Hfo_s(OH)3 + TmCO3+ = Hfo_sO(OH)2TmCO3 + H+
+    log_k     -0.56
+Hfo_s(OH)3 + Yb+3 = Hfo_sO(OH)2Yb+2 + H+
+    log_k     -2.17
+Hfo_s(OH)3 + Yb+3 = Hfo_sO2(OH)Yb+ + 2H+
+    log_k     -8.16
+Hfo_s(OH)3 + YbCO3+ = Hfo_sO(OH)2YbCO3 + H+
+    log_k     -0.62
+Hfo_s(OH)3 + Lu+3 = Hfo_sO(OH)2Lu+2 + H+
+    log_k     -2.17
+Hfo_s(OH)3 + Lu+3 = Hfo_sO2(OH)Lu+ + 2H+
+    log_k     -8.23
+Hfo_s(OH)3 + LuCO3+ = Hfo_sO(OH)2LuCO3 + H+
+    log_k     -0.59
