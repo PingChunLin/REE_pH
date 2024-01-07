@@ -13,7 +13,7 @@ The CSV files in the coeff folder can be replaced by other coefficient values. Y
 
 ## PHREEQC:
 
-REE_speciation.pqi is the input file for PHREEQC, a USGS software available at https://www.usgs.gov/software/phreeqc-version-3. The pqi file is only for PHREEQC with the REE scavenging model modified from (Schijf et al. 2015).
+REE_speciation.pqi is the input file for PHREEQC, a USGS software available at https://www.usgs.gov/software/phreeqc-version-3. The pqi file is only for PHREEQC with the REE scavenging model modified from (Schijf et al. 2015). The dat file is the database file for the equations (Pitzer).
 
 After installing PHREEQC, you can directly use REE_speciation.pqi. The first line of the file refers to the path of the database on the user end. You can change it to the local path where you've installed the PHREEQC software. 
 Directly put the file in PHREEQC, and you should be able to load the pqi file. After running the model, PHREEQC will produce multiple output files, including selected_output_all.sel. The REE speciation data from ree_speciation.csv (the input data for speciation.py) is a subset of trivalent ions (REE3+), monocarbonato complex (REECO3+), and dicarbonato complex (REE(CO3)2-) from selected_output_all.sel.
