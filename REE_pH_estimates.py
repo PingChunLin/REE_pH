@@ -11,7 +11,7 @@ from sklearn.metrics import r2_score
 pd.set_option('display.max_rows', None)
 
 
-def load_REE_data(file_path):
+def load_REE(file_path):
     """
     This function reads the input REE concentration data from rock records.
     """
@@ -46,15 +46,17 @@ def load_coeff(DREE_path, atomic_num_path, molar_mass_path, paas_path):
     M_Ca = 0.01*10**-3  # mol/g
     X_Ca = 1
     n_Ca = M_Ca/X_Ca
-    return D_REE, atomic_num, molar_mass, paas_mol, n_Ca
+    coeffs = [D_REE, atomic_num, molar_mass, paas_mol, n_Ca]
+    return coeffs
 
 
-def preprocess_data(REE_input, D_REE, atomic_num, molar_mass, paas_mol, n_Ca):
+def preprocess_data(REE_input, coeffs):
     """
     This function reads the coeffcients from csvs and creates a PAAS normalized
     REE dataset for regression analysis.
     """
     # molar fraction of REE
+    D_REE, atomic_num, molar_mass, paas_mol, n_Ca = coeffs
     n_REE = REE_input/molar_mass.loc[0]  # mols
     n_REE = n_REE[['La', 'Ce', 'Pr', 'Nd', 'Sm', 'Eu', 'Gd', 'Tb',
                    'Dy', 'Ho', 'Er', 'Tm', 'Yb', 'Lu']]
@@ -148,7 +150,8 @@ def perform_linear_regression(REE_proxy):
     print("Filtered mean: (w/o outliers) ", np.mean(pH_estimates_filtered))
     print("Filtered 2*SD (w/o outliers):", 2*sp.tstd(pH_estimates_filtered))
     print("Filtered 2*ME (w/o outliers):",
-          2*sp.tstd(pH_estimates_filtered)/sqrt(np.count_nonzero(pH_estimates)))
+          2 * sp.tstd(pH_estimates_filtered) /
+          sqrt(np.count_nonzero(pH_estimates)))
     print("Filtered median (w/o outliers) :", np.median(pH_estimates_filtered))
 
     # pH prediction plots
@@ -178,17 +181,12 @@ def perform_linear_regression(REE_proxy):
 
 
 def main():
-    REE_in_rocks = load_REE_data('REE_data/REE_limestone_toyama_noFJ1YK1_ugg.csv')
-    D_REE, atomic_num, molar_mass, paas_mol, n_Ca = load_coeff('coeff/DREE_toyama.csv',
-                                                               'coeff/atomic_number.csv',
-                                                               'coeff/molar_mass_mgmol.csv',
-                                                               'coeff/paas.csv')
-    perform_linear_regression(preprocess_data(REE_in_rocks,
-                                              D_REE,
-                                              atomic_num,
-                                              molar_mass,
-                                              paas_mol,
-                                              n_Ca))
+    REE_in_rocks = load_REE('REE_data/REE_limestone_toyama_noFJ1YK1_ugg.csv')
+    coeffs = load_coeff('coeff/DREE_toyama.csv',
+                        'coeff/atomic_number.csv',
+                        'coeff/molar_mass_mgmol.csv',
+                        'coeff/paas.csv')
+    perform_linear_regression(preprocess_data(REE_in_rocks, coeffs))
 
 
 if __name__ == "__main__":
